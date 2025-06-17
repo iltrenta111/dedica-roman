@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dedica per Roman</title>
+  <style>
+    body {
+      background-color: #fff0f6;
+      color: #900048;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    button {
+      background-color: #900048;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 25px;
+      font-size: 1.3em;
+      cursor: pointer;
+      margin-top: 20px;
+      max-width: 90vw;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #c6006b;
+    }
+    .small-button {
+      font-size: 1em;
+      padding: 10px 20px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      max-width: 200px;
+    }
+    .big-text {
+      font-size: 2em;
+      margin: 30px 20px 80px 20px;
+      line-height: 1.4;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="step1">
+    <button id="btn1">schiacciami se ami Roman</button>
+  </div>
+
+  <div id="step2" style="display:none;">
+    <button id="btn2">aaaah quindi lo ami, beh allora non ti costa nulla schiacciarmi un'altra volta per scoprire cosa ti deve dire, schiacciami</button>
+  </div>
+
+  <div id="step3" style="display:none;">
+    <button id="btn3">schiacciami ancora</button>
+  </div>
+
+  <div id="step4" style="display:none; flex-direction: column; align-items: center;">
+    <div class="big-text">
+      è passato solo un mese e mezzo da quando siamo insieme, ma sento già quanto sei speciale per me.<br>
+      Ogni giorno accanto a te è un regalo: i tuoi sorrisi, la tua dolcezza, il modo in cui riesci a farmi stare bene anche con una sola parola
+    </div>
+    <button id="btn4" class="small-button">schiacciami ----&gt;</button>
+  </div>
+
+  <div id="step5" style="display:none; flex-direction: column; align-items: center; padding: 40px;">
+    <div class="big-text">
+      Con te tutto sembra più bello, più semplice, più vero.<br><br>
+      Ti sto conoscendo poco a poco, ma già so che voglio continuare a scoprirti ogni giorno.<br><br>
+      Grazie per essere entrata nella mia vita.<br>
+      Ti voglio bene, tanto.
+    </div>
+  </div>
+
+  <script>
+    const
